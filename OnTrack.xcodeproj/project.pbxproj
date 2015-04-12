@@ -13,7 +13,6 @@
 		AF5F26D71AD9D367007C4BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26CF1AD9D367007C4BFA /* AppDelegate.swift */; };
 		AF5F26D81AD9D367007C4BFA /* NoGPSEnabledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26D01AD9D367007C4BFA /* NoGPSEnabledController.swift */; };
 		AF5F26D91AD9D367007C4BFA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26D11AD9D367007C4BFA /* Reachability.swift */; };
-		AF5F26DA1AD9D367007C4BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26D21AD9D367007C4BFA /* ViewController.swift */; };
 		AF5F26DB1AD9D367007C4BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5F26D31AD9D367007C4BFA /* Main.storyboard */; };
 		AF5F26DC1AD9D367007C4BFA /* NoConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26D51AD9D367007C4BFA /* NoConnectionController.swift */; };
 		AF5F26DD1AD9D367007C4BFA /* StartPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F26D61AD9D367007C4BFA /* StartPageController.swift */; };
@@ -43,6 +42,16 @@
 		AF5F270D1AD9FCF1007C4BFA /* LeaderMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */; };
 		AF5F270F1ADA2E9A007C4BFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5F270E1ADA2E9A007C4BFA /* MapKit.framework */; };
 		AF5F27111ADA4DDD007C4BFA /* FollowerMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */; };
+		AF5F27131ADA95C4007C4BFA /* Pages-04.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27121ADA95C4007C4BFA /* Pages-04.png */; };
+		AF5F27171ADA9612007C4BFA /* Pages-07.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27141ADA9612007C4BFA /* Pages-07.png */; };
+		AF5F27181ADA9612007C4BFA /* Pages-05.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27151ADA9612007C4BFA /* Pages-05.png */; };
+		AF5F27191ADA9612007C4BFA /* Pages-06.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27161ADA9612007C4BFA /* Pages-06.png */; };
+		AF5F271B1ADA97AB007C4BFA /* OnTrack-01.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F271A1ADA97AB007C4BFA /* OnTrack-01.png */; };
+		AF5F271E1ADAA321007C4BFA /* OnTrack-05.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F271C1ADAA321007C4BFA /* OnTrack-05.png */; };
+		AF5F271F1ADAA321007C4BFA /* OnTrack-07.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F271D1ADAA321007C4BFA /* OnTrack-07.png */; };
+		AF5F27211ADAA5C9007C4BFA /* FollowAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F27201ADAA5C9007C4BFA /* FollowAnnotation.swift */; };
+		AF5F27241ADAA777007C4BFA /* leaderPin.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27221ADAA777007C4BFA /* leaderPin.png */; };
+		AF5F27251ADAA777007C4BFA /* followerPin.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5F27231ADAA777007C4BFA /* followerPin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +76,6 @@
 		AF5F26CF1AD9D367007C4BFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../marco_polo/Marco Polo/AppDelegate.swift"; sourceTree = "<group>"; };
 		AF5F26D01AD9D367007C4BFA /* NoGPSEnabledController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoGPSEnabledController.swift; path = ../../../marco_polo/NoGPSEnabledController.swift; sourceTree = "<group>"; };
 		AF5F26D11AD9D367007C4BFA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "../../../marco_polo/Marco Polo/Reachability.swift"; sourceTree = "<group>"; };
-		AF5F26D21AD9D367007C4BFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../marco_polo/Marco Polo/ViewController.swift"; sourceTree = "<group>"; };
 		AF5F26D41AD9D367007C4BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../marco_polo/Marco Polo/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		AF5F26D51AD9D367007C4BFA /* NoConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoConnectionController.swift; path = "../../../marco_polo/Marco Polo/NoConnectionController.swift"; sourceTree = "<group>"; };
 		AF5F26D61AD9D367007C4BFA /* StartPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartPageController.swift; path = "../../../marco_polo/Marco Polo/StartPageController.swift"; sourceTree = "<group>"; };
@@ -97,6 +105,16 @@
 		AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderMapController.swift; sourceTree = "<group>"; };
 		AF5F270E1ADA2E9A007C4BFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerMapController.swift; sourceTree = "<group>"; };
+		AF5F27121ADA95C4007C4BFA /* Pages-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pages-04.png"; path = "../../../marco_polo/Pages-04.png"; sourceTree = "<group>"; };
+		AF5F27141ADA9612007C4BFA /* Pages-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pages-07.png"; path = "../../../Pages-07.png"; sourceTree = "<group>"; };
+		AF5F27151ADA9612007C4BFA /* Pages-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pages-05.png"; path = "../../../Pages-05.png"; sourceTree = "<group>"; };
+		AF5F27161ADA9612007C4BFA /* Pages-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pages-06.png"; path = "../../../Pages-06.png"; sourceTree = "<group>"; };
+		AF5F271A1ADA97AB007C4BFA /* OnTrack-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OnTrack-01.png"; path = "../../../OnTrack-01.png"; sourceTree = "<group>"; };
+		AF5F271C1ADAA321007C4BFA /* OnTrack-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OnTrack-05.png"; path = "../../../OnTrack-05.png"; sourceTree = "<group>"; };
+		AF5F271D1ADAA321007C4BFA /* OnTrack-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OnTrack-07.png"; path = "../../../OnTrack-07.png"; sourceTree = "<group>"; };
+		AF5F27201ADAA5C9007C4BFA /* FollowAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowAnnotation.swift; sourceTree = "<group>"; };
+		AF5F27221ADAA777007C4BFA /* leaderPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leaderPin.png; path = ../../../leaderPin.png; sourceTree = "<group>"; };
+		AF5F27231ADAA777007C4BFA /* followerPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = followerPin.png; path = ../../../followerPin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +182,8 @@
 				AF5F270A1AD9F7E3007C4BFA /* sessionWrapper.swift */,
 				AF5F26D01AD9D367007C4BFA /* NoGPSEnabledController.swift */,
 				AF5F26D11AD9D367007C4BFA /* Reachability.swift */,
-				AF5F26D21AD9D367007C4BFA /* ViewController.swift */,
 				AF5F26D31AD9D367007C4BFA /* Main.storyboard */,
+				AF5F27201ADAA5C9007C4BFA /* FollowAnnotation.swift */,
 				AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */,
 				AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */,
 				AF5F27041AD9E492007C4BFA /* LeadQueryController.swift */,
@@ -183,6 +201,15 @@
 		AF5F26AC1AD9D345007C4BFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF5F27221ADAA777007C4BFA /* leaderPin.png */,
+				AF5F27231ADAA777007C4BFA /* followerPin.png */,
+				AF5F271C1ADAA321007C4BFA /* OnTrack-05.png */,
+				AF5F271D1ADAA321007C4BFA /* OnTrack-07.png */,
+				AF5F271A1ADA97AB007C4BFA /* OnTrack-01.png */,
+				AF5F27141ADA9612007C4BFA /* Pages-07.png */,
+				AF5F27151ADA9612007C4BFA /* Pages-05.png */,
+				AF5F27161ADA9612007C4BFA /* Pages-06.png */,
+				AF5F27121ADA95C4007C4BFA /* Pages-04.png */,
 				AF5F26DE1AD9D376007C4BFA /* libsqlite3.dylib */,
 				AF5F26DF1AD9D376007C4BFA /* libz.dylib */,
 				AF5F26E01AD9D376007C4BFA /* SystemConfiguration.framework */,
@@ -304,9 +331,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5F27191ADA9612007C4BFA /* Pages-06.png in Resources */,
+				AF5F271B1ADA97AB007C4BFA /* OnTrack-01.png in Resources */,
+				AF5F27131ADA95C4007C4BFA /* Pages-04.png in Resources */,
+				AF5F27181ADA9612007C4BFA /* Pages-05.png in Resources */,
+				AF5F271E1ADAA321007C4BFA /* OnTrack-05.png in Resources */,
 				AF5F26DB1AD9D367007C4BFA /* Main.storyboard in Resources */,
+				AF5F27241ADAA777007C4BFA /* leaderPin.png in Resources */,
+				AF5F27251ADAA777007C4BFA /* followerPin.png in Resources */,
 				AF5F26B91AD9D345007C4BFA /* LaunchScreen.xib in Resources */,
+				AF5F27171ADA9612007C4BFA /* Pages-07.png in Resources */,
 				AF5F26B61AD9D345007C4BFA /* Images.xcassets in Resources */,
+				AF5F271F1ADAA321007C4BFA /* OnTrack-07.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5F26D71AD9D367007C4BFA /* AppDelegate.swift in Sources */,
+				AF5F27211ADAA5C9007C4BFA /* FollowAnnotation.swift in Sources */,
 				AF5F26D81AD9D367007C4BFA /* NoGPSEnabledController.swift in Sources */,
-				AF5F26DA1AD9D367007C4BFA /* ViewController.swift in Sources */,
 				AF5F27071AD9E4A7007C4BFA /* FollowQueryController.swift in Sources */,
 				AF5F270B1AD9F7E3007C4BFA /* sessionWrapper.swift in Sources */,
 				AF5F27091AD9EB2C007C4BFA /* localUser.swift in Sources */,

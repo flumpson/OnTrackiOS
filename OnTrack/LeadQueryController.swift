@@ -72,6 +72,7 @@ class LeadQueryController: UIViewController,UITextFieldDelegate {
         var query:PFQuery = PFQuery(className: "Session")
         
         query.whereKey("Title", containsString: userTitl)
+        query.whereKey("Active", equalTo: true)
         
         
         var session:PFObject! = PFObject(className: "Session")

@@ -16,7 +16,7 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
     var userTitle:String! = ""
 //    ============= view methods============
     override func viewDidLoad() {
-        
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
     
@@ -71,6 +71,7 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
         var query:PFQuery = PFQuery(className: "Session")
         
         query.whereKey("Title", containsString: userTitl)
+        query.whereKey("Active", equalTo: true)
         
         
         var session:PFObject! = PFObject(className: "Session")!
