@@ -41,6 +41,8 @@
 		AF5F27091AD9EB2C007C4BFA /* localUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F27081AD9EB2C007C4BFA /* localUser.swift */; };
 		AF5F270B1AD9F7E3007C4BFA /* sessionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F270A1AD9F7E3007C4BFA /* sessionWrapper.swift */; };
 		AF5F270D1AD9FCF1007C4BFA /* LeaderMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */; };
+		AF5F270F1ADA2E9A007C4BFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5F270E1ADA2E9A007C4BFA /* MapKit.framework */; };
+		AF5F27111ADA4DDD007C4BFA /* FollowerMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		AF5F27081AD9EB2C007C4BFA /* localUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = localUser.swift; sourceTree = "<group>"; };
 		AF5F270A1AD9F7E3007C4BFA /* sessionWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sessionWrapper.swift; sourceTree = "<group>"; };
 		AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderMapController.swift; sourceTree = "<group>"; };
+		AF5F270E1ADA2E9A007C4BFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerMapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5F270F1ADA2E9A007C4BFA /* MapKit.framework in Frameworks */,
 				AF5F27021AD9D376007C4BFA /* ParseUI.framework in Frameworks */,
 				AF5F26F91AD9D376007C4BFA /* CFNetwork.framework in Frameworks */,
 				AF5F26FF1AD9D376007C4BFA /* ParseCrashReporting.framework in Frameworks */,
@@ -135,6 +140,7 @@
 		AF5F26A01AD9D345007C4BFA = {
 			isa = PBXGroup;
 			children = (
+				AF5F270E1ADA2E9A007C4BFA /* MapKit.framework */,
 				AF5F26AB1AD9D345007C4BFA /* OnTrack */,
 				AF5F26C11AD9D345007C4BFA /* OnTrackTests */,
 				AF5F26AA1AD9D345007C4BFA /* Products */,
@@ -160,6 +166,7 @@
 				AF5F26D11AD9D367007C4BFA /* Reachability.swift */,
 				AF5F26D21AD9D367007C4BFA /* ViewController.swift */,
 				AF5F26D31AD9D367007C4BFA /* Main.storyboard */,
+				AF5F27101ADA4DDD007C4BFA /* FollowerMapController.swift */,
 				AF5F270C1AD9FCF1007C4BFA /* LeaderMapController.swift */,
 				AF5F27041AD9E492007C4BFA /* LeadQueryController.swift */,
 				AF5F27061AD9E4A7007C4BFA /* FollowQueryController.swift */,
@@ -327,6 +334,7 @@
 				AF5F26D91AD9D367007C4BFA /* Reachability.swift in Sources */,
 				AF5F26DC1AD9D367007C4BFA /* NoConnectionController.swift in Sources */,
 				AF5F27051AD9E492007C4BFA /* LeadQueryController.swift in Sources */,
+				AF5F27111ADA4DDD007C4BFA /* FollowerMapController.swift in Sources */,
 				AF5F26DD1AD9D367007C4BFA /* StartPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

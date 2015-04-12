@@ -48,6 +48,7 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
             if(session.exists == true){
 //                follow method
                 self.followSession(session.sesh)
+            self.performSegueWithIdentifier("followerMap", sender: self)
             }
             else{
                 var alert = UIAlertView(title: "The Session Doesn't Exist", message:"You're ahead of your time", delegate: nil, cancelButtonTitle: "Thanks, I guess")
@@ -87,7 +88,7 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
         return sessionWrap
     }
     
-//   takes in a session and adds the follower to it
+//   takes in a session and adds the follower to the relation
     func followSession(session:PFObject){
         
         let lc = LocalUser()
@@ -97,10 +98,15 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
         
         
         newUser.setObject(true, forKey: "Active")
-        session.addObject(newUser, forKey: "Followers")
-        session.saveInBackgroundWithTarget(nil, selector: nil)
+        
+        var relation:PFRelation! = session.relationForKey("Followers")!
+        relation.addObject(newUser)
+        
+        
+        session.save()
         
         newUser.setObject(session, forKey: "session")
+        newUser.saveInBackgroundWithTarget(nil, selector: nil)
     }
     
 //==================End=======================

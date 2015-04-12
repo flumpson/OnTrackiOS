@@ -31,7 +31,7 @@ class LeadQueryController: UIViewController,UITextFieldDelegate {
         if(self.titleField.text != ""){
             if(self.queryServer(self.userTitle)){
                 self.createSession(self.userTitle)
-//                self.performSegueWithIdentifier("leaderMap", sender: self)
+                self.performSegueWithIdentifier("leaderMap", sender: self)
             }
             else{
                 var alert = UIAlertView(title: "The Session Already Exists", message:"Sorry, someone beat you to it", delegate: nil, cancelButtonTitle: "Ugh, fine")
@@ -101,7 +101,7 @@ class LeadQueryController: UIViewController,UITextFieldDelegate {
         newSession.setObject(newUser, forKey: "Leader")
         newSession.setObject(title, forKey: "Title")
         newSession.setObject(true, forKey: "Active")
-        newSession.saveInBackgroundWithTarget(nil, selector: nil)
+        newSession.save()
         newUser.setObject(newSession, forKey: "session")
         newUser.saveInBackgroundWithTarget(nil, selector: nil)
     }
