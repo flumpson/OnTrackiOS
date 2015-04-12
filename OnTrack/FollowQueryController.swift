@@ -89,13 +89,18 @@ class FollowQueryController: UIViewController, UITextFieldDelegate {
     
 //   takes in a session and adds the follower to it
     func followSession(session:PFObject){
-        let lc = LocalUser()
         
-        let user = lc.getLocalUser()
-        session.addObject(user, forKey: "Followers")
+        let lc = LocalUser()
+        let temp = lc.getLocalUser()
+        var query:PFQuery = PFQuery(className: "customUser")
+        var newUser:PFObject = query.getObjectWithId(temp.objectId)
+        
+        
+        newUser.setObject(true, forKey: "Active")
+        session.addObject(newUser, forKey: "Followers")
         session.saveInBackgroundWithTarget(nil, selector: nil)
         
-        user.setObject(session, forKey: "session")
+        newUser.setObject(session, forKey: "session")
     }
     
 //==================End=======================

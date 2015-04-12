@@ -87,19 +87,23 @@ class LeadQueryController: UIViewController,UITextFieldDelegate {
     
 //    creates a session and initializes its fields to the leader who created it
     func createSession(title:String){
+        
         let lc = LocalUser()
         var newSession:PFObject = PFObject(className: "Session")
+        var localUser = lc.getLocalUser()
+        var query:PFQuery = PFQuery(className: "customUser")
+        var newUser:PFObject = query.getObjectWithId(localUser.objectId)
+        newUser.setObject(true, forKey: "Active")
         
-        let user = lc.getLocalUser()
-        newSession.setObject(user, forKey: "Leader")
-        user.setObject(newSession, forKey: "session")
+        
+        
+        
+        newSession.setObject(newUser, forKey: "Leader")
         newSession.setObject(title, forKey: "Title")
         newSession.setObject(true, forKey: "Active")
         newSession.saveInBackgroundWithTarget(nil, selector: nil)
-        
-        
-//        user.saveInBackgroundWithTarget(nil, selector: nil)
-//        user.pin()
+        newUser.setObject(newSession, forKey: "session")
+        newUser.saveInBackgroundWithTarget(nil, selector: nil)
     }
     
     
